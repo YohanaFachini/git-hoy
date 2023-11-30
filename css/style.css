@@ -1,0 +1,359 @@
+/* esto es un comentario
+    elemento{propiedad:valor */
+/* en ccs los id se identifican con # , las classes con .nombredelaclase*/
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-left: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 100%;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/*menu de navegacion*/
+
+/*header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.3rem;
+}
+
+header,
+nav ul a {
+  text-decoration: none;
+  background-color: black;
+}
+
+
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+#menu ul li a:hover {
+  background-color: #25117b;
+}*/
+/*contenido del body*/
+/*.banner {
+  margin: 0%;
+  width: 100%;
+  height: 10%;
+}*/
+body {
+  background-color: whitesmoke;
+}
+/*productos destacados*/
+
+nav {
+  background-color: #000000;
+}
+.link {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+.link:hover {
+  background-color: #7976fb;
+}
+.imglogo {
+  width: 40%;
+  height: 20%;
+}
+
+.imgColum1 {
+  width: 80%;
+  height: 80%;
+  margin-left: 25%;
+}
+
+.imgColum2 {
+  width: 80%;
+  height: 80%;
+  margin-left: 3%;
+}
+
+.imgColum3 {
+  width: 80%;
+  height: 80%;
+  margin-left: 25%;
+}
+.imgColum4 {
+  width: 80%;
+  height: 80%;
+  margin-left: 3%;
+}
+
+.destacados {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 180%;
+}
+
+#bannersecon {
+  width: 100%;
+  height: 5%;
+}
+.tips {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.texto {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 95%;
+}
+
+/*footer*/
+footer {
+  background: linear-gradient(to right, #25117b, #f1f1f3);
+  width: 100%;
+  height: 40%;
+  margin-top: 10%;
+}
+
+.contenedor-footer {
+  display: flex;
+}
+
+footer h5 {
+  display: block;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: white;
+  font-size: 80%;
+}
+.imgcontacto {
+  width: 9%;
+  height: 70%;
+}
+.footerImagen {
+  margin-top: 1%;
+}
+section p {
+  text-align: justify;
+}
+
+.equipo {
+  width: 40%;
+  height: 60%;
+}
+
+.nosotros {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+iframe {
+  margin-left: 180px;
+  border-radius: 5px;
+}
+
+.grid-conteiner {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 10%;
+}
+.grid-item {
+  width: auto;
+  height: 80%;
+}
+
+.descuentos {
+  width: 220px;
+  height: 300px;
+  margin-top: 5%;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.tpg {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5%;
+}
+
+.shop {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3%;
+}
+
+.grid-conteiner2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 4%;
+}
+.grid-item2 {
+  width: 90%;
+  height: 75%;
+  align-items: center;
+}
+
+/*medios de pago*/
+.mediodepago {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3%;
+  color:black;
+  font-size: 180%;
+}
+
+.tarjetas {
+  margin-top: 3%;
+  background-color: rgb(220, 220, 226);
+}
+
+.debito {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 180%;
+  color: rgb(18, 18, 55);
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.credito {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 180%;
+  color: rgb(18, 18, 55);
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.imgtarjetas{
+  margin-left: 2%;
+}
+
+.subtitulomdp{
+  margin-left: 2%;
+  margin-top: 4%;
+  font-size: 100%;
+}
+.pmdp{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+/*envios*/
+.envios {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 180%;
+  margin-top: 2%;
+}
+
+.envios2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background: linear-gradient(to right, #151415, #efeff1);
+  color: whitesmoke;
+}
+
+.enviop {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+/*contacto*/
+
+form {
+  background: linear-gradient(to right, #1c1c1f, #f1f1f3);
+  margin-right: 40%;
+  text-align: justify;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.contacto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 180%;
+  color:black;
+  margin-top: 2%;
+  margin-left: 5%;
+  
+}
+
+/*sobre nosotros*/
+.sobrenosotros {
+  display: flex;
+}
+.titulo2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 180%;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.sobrenosotros p {
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  font-size: 100%;
+}
+
+.sobrenosotros img {
+  margin-left: 5%;
+  margin-top: 3%;
+  display: flex;
+  margin-bottom: 3%;
+  width: 50%;
+  height: 50%;
+}
+
+.iframe{
+  align-items: center;
+  margin-left: 26%;
+  margin-top: 2%;
+}
