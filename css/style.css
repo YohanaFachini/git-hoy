@@ -16,6 +16,7 @@ h1 {
   font-size: 100%;
 }
 
+
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
@@ -142,10 +143,7 @@ nav {
   font-size: 95%;
 }
 
-.imgcontacto {
-  width: 9%;
-  height: 70%;
-}
+
 
 section p {
   text-align: justify;
@@ -372,9 +370,7 @@ form {
 }
 
 .iframe {
-  align-items: center;
-  margin-left: 26%;
-  margin-top: 2%;
+  align-items: center;;
 }
 /*footer*/
 footer {
@@ -400,7 +396,10 @@ footer h5 {
 .footerImg {
   display: flex;
 }
-
+.imgcontacto {
+  width: 32px;
+  height: 32px;
+}
 .imgFooterContacto {
   width: 32px;
   height: 32px;
