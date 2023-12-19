@@ -1,120 +1,79 @@
-/* esto es un comentario
-    elemento{propiedad:valor */
-/* en ccs los id se identifican con # , las classes con .nombredelaclase*/
 * {
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
 }
-
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  margin-left: 10px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-size: 100%;
-}
-
-
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  text-align: center;
-}
-
-h3 {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+* h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
 
-/*menu de navegacion*/
-
-/*header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  font-size: 1.3rem;
-}
-
-header,
-nav ul a {
-  text-decoration: none;
-  background-color: black;
-}
-
-
-
-a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-}
-
-#menu ul li a:hover {
-  background-color: #25117b;
-}*/
-/*contenido del body*/
-/*.banner {
-  margin: 0%;
-  width: 100%;
-  height: 10%;
-}*/
-
-body {
+/*media queries */
+header {
   background-color: whitesmoke;
 }
-/*productos destacados*/
-
-nav {
+header nav {
   background-color: #000000;
 }
-.link {
+header nav div ul li .link {
   color: whitesmoke;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
 }
-.link:hover {
+header nav div ul li .link:hover {
   background-color: #7976fb;
 }
-.imglogo {
+header nav div .imglogo {
   width: 40%;
   height: 20%;
 }
 
-.imgColum1 {
+main section div .conteiner {
+  display: flex;
+  justify-content: center;
+}
+main section div .imgColum1,
+main section div .imgColum3 {
   width: 80%;
   height: 80%;
   margin-left: 25%;
 }
-
-.imgColum2 {
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  main section div .imgColum1,
+  main section div .imgColum3 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 960px) and (min-width: 200px) and (max-width: 350px) {
+  main section div .imgColum1,
+  main section div .imgColum3 {
+    width: 100px;
+    height: 100px;
+  }
+}
+main section div .imgColum2,
+main section div .imgColum4 {
   width: 80%;
   height: 80%;
   margin-left: 3%;
 }
-
-.imgColum3 {
-  width: 80%;
-  height: 80%;
-  margin-left: 25%;
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  main section div .imgColum2,
+  main section div .imgColum4 {
+    width: 200px;
+    height: 200px;
+  }
 }
-.imgColum4 {
-  width: 80%;
-  height: 80%;
-  margin-left: 3%;
+@media screen and (min-width: 501px) and (max-width: 960px) and (min-width: 200px) and (max-width: 350px) {
+  main section div .imgColum2,
+  main section div .imgColum4 {
+    width: 100px;
+    height: 100px;
+  }
 }
-
-.destacados {
+main .destacados {
   margin-top: 1%;
   margin-bottom: 1%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -122,12 +81,16 @@ nav {
   font-weight: bold;
   font-size: 2rem;
 }
-
-#bannersecon {
+@media screen and (max-width: 501px) {
+  main .destacados {
+    font-size: 1rem;
+  }
+}
+main #bannersecon {
   width: 100%;
   height: 5%;
 }
-.tips {
+main .tips {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 150%;
@@ -135,8 +98,12 @@ nav {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
-.texto {
+@media screen and (max-width: 501px) {
+  main .tips {
+    font-size: 1rem;
+  }
+}
+main .texto {
   margin-left: 5%;
   margin-right: 5%;
   text-align: justify;
@@ -144,75 +111,87 @@ nav {
   font-size: 95%;
   margin-bottom: 10%;
 }
-
-
-
-section p {
-  text-align: justify;
- 
+@media screen and (max-width: 501px) {
+  main .texto {
+    font-size: 50%;
+  }
 }
 
-.equipo {
-  width: 40%;
-  height: 60%;
-}
-
-.nosotros {
+main .shop {
+  text-align: center;
+  font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 180%;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 3%;
+  animation-name: miAnimacion;
+  animation-duration: 5s;
+  position: relative;
 }
-
-iframe {
-  border-radius: 5%;
-margin-left: 25%;
-margin-right: 25%;
-margin-top: 2%;
-margin-bottom: 1%;
+@keyframes miAnimacion {
+  0% {
+    color: #3e065f;
+  }
+  25% {
+    color: #1e5128;
+  }
+  35% {
+    color: #097188;
+  }
+  50% {
+    color: #1a1a40;
+  }
+  60% {
+    color: #71115a;
+  }
+  75% {
+    color: #59244b;
+  }
+  80% {
+    color: #3c979e;
+  }
+  100% {
+    color: black;
+  }
 }
-.tiendas{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 170%;
-}
-
-.grid-conteiner {
+main .grid-conteiner {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   margin-left: 10%;
 }
-.grid-item {
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  main .grid-conteiner {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0%;
+  }
+}
+main .grid-item {
   width: auto;
   height: 80%;
 }
-
-.descuentos {
-  width: 220px;
-  height: 300px;
-  margin-top: 5%;
+@media screen and (max-width: 501px) {
+  main .grid-item {
+    width: 90%;
+    height: 75%;
+    margin-left: 2%;
+  }
 }
-
-.conteiner {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  main .grid-item {
+    width: 90%;
+    height: 75%;
+    margin-left: 2%;
+  }
 }
-
-.tpg {
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 5%;
-}
-
-.shop {
-  text-align: center;
-  font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 3%;
-}
-
-.grid-conteiner2 {
+main .grid-conteiner2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 4%;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -220,224 +199,106 @@ margin-bottom: 1%;
   margin-left: 5%;
   margin-right: 4%;
 }
-.grid-item2 {
+main .grid-item2 {
   width: 90%;
   height: 75%;
   align-items: center;
 }
-/*media queries de "page productos"*/
-@media screen and (max-width: 501px) {
-  .grid-conteiner {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 0%;
-  }
-  iframe {
-    border-radius: 5%;
-  margin-left: 10%;
-  margin-right: 5%;
-  width: 250px;
-  height: 200px;
-  }
-  .imgColum1{
-    width: 150px;
-    height: 150px;
-  }
-  .imgColum2{
-    width: 150px;
-    height: 150px;
-  }
-  .imgColum3{
-    width: 150px;
-    height: 150px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-  .imgColum4{
-    width: 150px;
-    height: 150px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
- 
-  }
-
-@media screen and (min-width:200px) and (max-width:350px){
-  .imgColum1{
-    width: 100px;
-    height: 100px;
-  }
-  .imgColum2{
-    width: 100px;
-    height: 100px;
-  }
-  .imgColum3{
-    width: 100px;
-    height: 100px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-  .imgColum4{
-    width: 100px;
-    height: 100px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  } 
+main .conteiner {
+  display: flex;
+  justify-content: center;
+}
+main .descuentos {
+  width: 220px;
+  height: 300px;
+  margin-top: 5%;
 }
 
-@media screen and (max-width: 501px) {
-  .grid-item {
-    width: 90%;
-    height: 75%;
-    margin-left: 2%;
-  }
-  .destacados {
-    font-size: 1rem;
-  }
-  .tips {
-    font-size: 1rem;
-  }
-  .texto {
-    font-size: 50%;
-  }
-  .h5footer{
-    font-size: 40%;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 960px) {
-  .grid-conteiner {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 0%;
-  }
-  iframe {
-  width: 500px;
-  height: 450px;
-  margin-left: 10%;
-  margin-top: 2%;
-  }
-  .h5footer{
-    font-size: 50%;
-}
-.imgColum1{
-  width: 200px;
-  height: 200px;
-}
-.imgColum2{
-  width: 200px;
-  height: 200px;
-}
-.imgColum3{
-  width: 200px;
-  height: 200px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-.imgColum4{
-  width: 200px;
-  height: 200px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-}
-
-@media screen and (min-width: 501px) and (max-width: 960px) {
-  .grid-item {
-    width: 90%;
-    height: 75%;
-    margin-left: 2%;
-  }
+h2 .tpg {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5%;
 }
 
 /*medios de pago*/
-.mediodepago {
+body main .mediodepago {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 3%;
   color: black;
   font-size: 180%;
 }
-
-.tarjetas {
+body main .tarjetas {
   margin-top: 3%;
   background-color: rgb(220, 220, 226);
 }
-
-.debito {
+body main .debito {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 180%;
   color: rgb(16, 16, 17);
   margin-top: 2%;
   margin-left: 2%;
 }
-
-.credito {
+body main .credito {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 180%;
   color: rgb(18, 18, 55);
   margin-top: 2%;
   margin-left: 2%;
 }
-.imgtarjetas {
+body main .imgtarjetas {
   margin-left: 2%;
 }
-
-.subtitulomdp {
+body main .subtitulomdp {
   margin-left: 2%;
   margin-top: 4%;
   font-size: 100%;
 }
-.pmdp {
+body main .pmdp {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   margin-top: 2%;
   margin-left: 2%;
-}
-/*envios*/
-.envios{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 170%;
-  margin-left: 2%;
-  margin-top: 3%;
 }
 
-.envios1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 115%;
-  background: linear-gradient(to right, #9e0c9e, #7976fb);
-  color: whitesmoke;
+/*envios*/
+main .envios {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 130%;
+  margin-left: 2%;
   margin-top: 3%;
 }
-.enviop1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  text-align: center;
-; margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 2%;
-}
-.envios2 {
+main .envios1,
+main .envios2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 115%;
   background: linear-gradient(to right, #9e0c9e, #7976fb);
   color: whitesmoke;
   margin-top: 5%;
+  text-align: center;
 }
-
-.enviop2 {
+main .enviop1,
+main .enviop2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
   text-align: center;
-; margin-left: 3%;
+  margin-left: 3%;
   margin-right: 3%;
+  margin-top: 2%;
+}
+
+.enviop2 {
   margin-bottom: 15%;
 }
 
 /*contacto*/
-
-form {
+main .contacto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 140%;
+  color: black;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+main form {
   margin-right: 40%;
   text-align: justify;
   color: rgb(18, 43, 43);
@@ -447,51 +308,95 @@ form {
   margin-bottom: 1%;
 }
 
-.contacto {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 180%;
-  color: black;
-  margin-top: 2%;
-  margin-left: 5%;
-}
-
-
 /*sobre nosotros*/
-.sobrenosotros {
+main .sobrenosotros {
   display: flex;
 }
-.titulo2 {
+@media screen and (max-width: 501px) {
+  main .sobrenosotros {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .sobrenosotros {
+    flex-direction: column;
+  }
+}
+main .sobrenosotros img {
+  margin-left: 5%;
+  margin-top: 2%;
+  display: flex;
+  margin-bottom: 3%;
+  width: 50%;
+  height: 50%;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .sobrenosotros img {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 501px) {
+  main .sobrenosotros img {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+main .sobrenosotros p {
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  font-size: 100%;
+  display: flex;
+}
+@media screen and (max-width: 501px) {
+  main .sobrenosotros p {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .sobrenosotros p {
+    flex-direction: column;
+  }
+}
+main .titulo2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 180%;
   text-align: left;
   margin-top: 2%;
   margin-left: 5%;
 }
-
-.sobrenosotros p {
-  text-align: justify;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 30px;
-  font-size: 100%;
- 
-}
-
-.sobrenosotros img {
+main .tiendas {
   margin-left: 5%;
-  margin-top: 3%;
-  display: flex;
-  margin-bottom: 3%;
-  width: 50%;
-  height: 50%;
 }
+main iframe {
+  margin-left: 5%;
+  margin-bottom: 2%;
+  display: flex;
+}
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  main iframe {
+    width: 400px;
+    height: 350px;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 501px) {
+  main iframe {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+}
+
 /*footer*/
 footer {
   background: linear-gradient(to right, #25117b, #f1f1f3);
   width: 100%;
   height: 40%;
   margin-bottom: 0%;
- 
 }
 
 .contenedor-footer {
@@ -507,13 +412,26 @@ footer h5 {
   color: white;
   font-size: 2vh;
 }
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  footer h5 {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 501px) {
+  footer h5 {
+    font-size: 40%;
+  }
+}
+
 .footerImg {
   display: flex;
 }
+
 .imgcontacto {
   width: 32px;
   height: 32px;
 }
+
 .imgFooterContacto {
   width: 32px;
   height: 32px;

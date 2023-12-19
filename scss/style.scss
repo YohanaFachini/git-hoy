@@ -1,0 +1,378 @@
+@import "variables";
+@import "basicos";
+@import "mixin";
+@import "mediaqueries";
+//navegacion
+
+header {
+  background-color: whitesmoke;
+  nav {
+    background-color: #000000;
+    div {
+      ul {
+        li {
+          .link {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: $fontfamily2;
+            padding: 10px;
+          }
+          .link:hover {
+            background-color: #7976fb;
+          }
+        }
+      }
+      .imglogo {
+        width: 40%;
+        height: 20%;
+      }
+    }
+  }
+}
+
+main {
+  section {
+    div {
+      .conteiner {
+        display: flex;
+        justify-content: center;
+      }
+      .imgColum1,
+      .imgColum3 {
+        @include caja_personalizada();
+        @include desktop {
+          width: 200px;
+          height: 200px;
+          @include mobile {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .imgColum2,
+      .imgColum4 {
+        @include caja_personalizada2();
+        @include desktop {
+          width: 200px;
+          height: 200px;
+          @include mobile {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+  .destacados {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: $fontfamily-principal;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+  #bannersecon {
+    width: 100%;
+    height: 5%;
+  }
+  .tips {
+    font-family: $fontfamily-principal;
+    font-weight: bold;
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+  .texto {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-family: $fontfamily-principal;
+    font-size: 95%;
+    margin-bottom: 10%;
+    @include tablet {
+      font-size: 50%;
+    }
+  }
+}
+
+//estilos de page productos
+main {
+  .shop {
+    text-align: center;
+    font-size: 40px;
+    font-family: $fontfamily2;
+    margin-top: 3%;
+    animation-name: miAnimacion;
+    animation-duration: 5s;
+    position: relative;
+
+    @keyframes miAnimacion {
+      0% {
+        color: $color_8;
+      }
+      25% {
+        color: $color_9;
+      }
+      35% {
+        color: $color_12;
+      }
+
+      50% {
+        color: $color_10;
+      }
+      60% {
+        color: $color_13;
+      }
+      75% {
+        color: $color_11;
+      }
+      80% {
+        color: $color_14;
+      }
+      100% {
+        color: $color-letra;
+      }
+    }
+  }
+  .grid-conteiner {
+    @include caja_productos;
+    @include desktop {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 0%;
+    }
+  }
+  .grid-item {
+    @include grid_item;
+    @include tablet {
+      width: 90%;
+      height: 75%;
+      margin-left: 2%;
+    }
+    @include desktop {
+      width: 90%;
+      height: 75%;
+      margin-left: 2%;
+    }
+  }
+  .grid-conteiner2 {
+    @include caja_descuentos;
+    @include caja_descuentos;
+  }
+  .grid-item2 {
+    @include grid_item2;
+  }
+  .conteiner {
+    display: flex;
+    justify-content: center;
+  }
+  .descuentos {
+    width: 220px;
+    height: 300px;
+    margin-top: 5%;
+  }
+}
+h2 {
+  .tpg {
+    font-size: 30px;
+    font-family: $fontfamily2;
+    margin-top: 5%;
+  }
+}
+/*medios de pago*/
+body {
+  main {
+    .mediodepago {
+      font-family: $fontfamily2;
+      margin-top: 3%;
+      color: $color-letra;
+      font-size: 180%;
+    }
+    .tarjetas {
+      margin-top: 3%;
+      background-color: $background-color_4;
+    }
+    .debito {
+      font-family: $fontfamily-principal;
+      font-size: 180%;
+      color: $color_3;
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+    .credito {
+      font-family: $fontfamily-principal;
+      font-size: 180%;
+      color: $color_4;
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+    .imgtarjetas {
+      margin-left: 2%;
+    }
+
+    .subtitulomdp {
+      margin-left: 2%;
+      margin-top: 4%;
+      font-size: 100%;
+    }
+    .pmdp {
+      font-family: $fontfamily-principal;
+      font-size: 100%;
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+  }
+}
+/*envios*/
+main {
+  .envios {
+    font-family: $fontfamily-principal;
+    font-size: 130%;
+    margin-left: 2%;
+    margin-top: 3%;
+  }
+  .envios1,
+  .envios2 {
+    @include envios;
+  }
+  .enviop1,
+  .enviop2 {
+    @include enviosp;
+  }
+}
+.enviop2 {
+  margin-bottom: 15%;
+}
+
+/*contacto*/
+main {
+  .contacto {
+    font-family: $fontfamily2;
+    font-size: 140%;
+    color: $color-letra;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  form {
+    margin-right: 40%;
+    text-align: justify;
+    color: $color_5;
+    font-family: $fontfamily2;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+}
+
+/*sobre nosotros*/
+main {
+  .sobrenosotros {
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .sobrenosotros img {
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    margin-bottom: 3%;
+    width: 50%;
+    height: 50%;
+    @include mobile {
+      flex-direction: column;
+      width: 80%;
+    }
+    @include tablet {
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+  .sobrenosotros p {
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    font-size: 100%;
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .titulo2 {
+    font-family: $fontfamily-principal;
+    font-size: 180%;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .tiendas {
+    margin-left: 5%;
+  }
+  iframe {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    @include desktop {
+      width: 400px;
+      height: 350px;
+      margin-left: 10%;
+      margin-top: 2%;
+    }
+    @include tablet {
+      width: 300px;
+      height: 300px;
+      margin: 0;
+    }
+  }
+}
+/*footer*/
+footer {
+  background: linear-gradient(to right, #25117b, #f1f1f3);
+  width: 100%;
+  height: 40%;
+  margin-bottom: 0%;
+}
+.contenedor-footer {
+  display: flex;
+}
+footer h5 {
+  display: flex;
+  display: block;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: white;
+  font-size: 2vh;
+  @include desktop {
+    font-size: 50%;
+  }
+  @include tablet {
+    font-size: 40%;
+  }
+}
+.footerImg {
+  display: flex;
+}
+.imgcontacto {
+  width: 32px;
+  height: 32px;
+}
+.imgFooterContacto {
+  width: 32px;
+  height: 32px;
+}

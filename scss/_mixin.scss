@@ -1,0 +1,70 @@
+//mixin
+@mixin caja_personalizada() {
+  width: 80%;
+  height: 80%;
+  margin-left: 25%;
+}
+@mixin caja_personalizada2() {
+  width: 80%;
+  height: 80%;
+  margin-left: 3%;
+}
+@mixin caja_productos() {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 10%;
+}
+@mixin grid_item() {
+  width: auto;
+  height: 80%;
+}
+@mixin caja_descuentos() {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 4%;
+}
+@mixin grid_item2() {
+  width: 90%;
+  height: 75%;
+  align-items: center;
+}
+
+@mixin parrafo() {
+  font-family: $fontfamily2;
+  font-size: 100%;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+@mixin parrafotop() {
+  font-family: $fontfamily2;
+  font-size: 100%;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 15%;
+}
+
+@mixin envios() {
+  font-family: $fontfamily2;
+  font-size: 115%;
+  background: linear-gradient(to right, #9e0c9e, #7976fb);
+  color: $color_7;
+  margin-top: 5%;
+  text-align: center;
+}
+@mixin enviosp() {
+  font-family: $fontfamily2;
+  font-size: 100%;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
