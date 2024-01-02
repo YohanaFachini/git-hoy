@@ -14,3 +14,8 @@
     @content;
   }
 }
+@mixin desktopfull {
+  @media screen and (min-width: 960px) and (max-width: 2000px) {
+    @content;
+  }
+}

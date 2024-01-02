@@ -1,6 +1,6 @@
 * {
   padding: 0%;
-  margin: 0;
+  margin: 0%;
   box-sizing: border-box;
 }
 * h1 {
@@ -126,6 +126,12 @@ main .shop {
   animation-duration: 5s;
   position: relative;
 }
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .shop {
+    text-align: center;
+    font-size: 35px;
+  }
+}
 @keyframes miAnimacion {
   0% {
     color: #3e065f;
@@ -157,7 +163,7 @@ main .grid-conteiner {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 @media screen and (min-width: 501px) and (max-width: 960px) {
   main .grid-conteiner {
@@ -165,6 +171,11 @@ main .grid-conteiner {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-left: 0%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .grid-conteiner {
+    align-items: center;
   }
 }
 main .grid-item {
@@ -176,6 +187,12 @@ main .grid-item {
     width: 90%;
     height: 75%;
     margin-left: 2%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .grid-item {
+    align-items: center;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 960px) {
@@ -214,10 +231,46 @@ main .descuentos {
   margin-top: 5%;
 }
 
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 501px) {
+  h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 2000px) {
+  h2 {
+    text-align: center;
+  }
+}
 h2 .tpg {
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 5%;
+  text-align: center;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  h2 .tpg {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 501px) {
+  h2 .tpg {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  h2 .tpg {
+    text-align: center;
+  }
 }
 
 /*medios de pago*/

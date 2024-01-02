@@ -105,6 +105,10 @@ main {
 //estilos de page productos
 main {
   .shop {
+    @include mobile{
+      text-align: center;
+      font-size: 35px;
+    }
     text-align: center;
     font-size: 40px;
     font-family: $fontfamily2;
@@ -149,13 +153,21 @@ main {
       grid-template-columns: 1fr 1fr;
       margin-left: 0%;
     }
+    @include mobile{
+      align-items: center;
+    }
   }
   .grid-item {
     @include grid_item;
+    
     @include tablet {
       width: 90%;
       height: 75%;
       margin-left: 2%;
+      align-items: center;
+    }
+    @include mobile{
+      align-items: center;
     }
     @include desktop {
       width: 90%;
@@ -180,11 +192,24 @@ main {
     margin-top: 5%;
   }
 }
+
 h2 {
+  @include mobile{
+    text-align: center;
+  }
+  @include tablet{text-align: center;}
+  @include desktop{ text-align: center;}
+  @include desktopfull{text-align: center;}
   .tpg {
     font-size: 30px;
     font-family: $fontfamily2;
     margin-top: 5%;
+    text-align: center;
+    @include mobile{
+      text-align: center;
+    }
+    @include tablet{ text-align: center;}
+    @include desktop{ text-align: center;}
   }
 }
 /*medios de pago*/
