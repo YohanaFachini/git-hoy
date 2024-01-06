@@ -437,9 +437,12 @@ main .enviop2 {
 main .contacto {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 140%;
-  color: black;
+  background: linear-gradient(to right, #9e0c9e, #7976fb);
+  color: whitesmoke;
   margin-top: 5%;
   margin-left: 5%;
+  padding: 10px;
+  margin-right: 5%;
 }
 main form {
   margin-right: 40%;

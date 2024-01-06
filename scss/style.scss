@@ -358,9 +358,12 @@ main {
   .contacto {
     font-family: $fontfamily2;
     font-size: 140%;
-    color: $color-letra;
+    background: linear-gradient(to right, #9e0c9e, #7976fb);
+    color: whitesmoke;
     margin-top: 5%;
     margin-left: 5%;
+    padding: 10px;
+    margin-right: 5%;
   }
   form {
     margin-right: 40%;
