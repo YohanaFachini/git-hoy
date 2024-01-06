@@ -220,40 +220,79 @@ body {
       margin-top: 3%;
       color: $color-letra;
       font-size: 180%;
+      margin-left: 5%;
+      @include mobile{
+        font-size: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        text-align: center;
+        margin-left: 3%;
+      }
     }
     .tarjetas {
       margin-top: 3%;
       background-color: $background-color_4;
+      text-align: center;
+      font-size: 180%;
+      @include mobile {
+        font-size: 135%;
+        margin-bottom: 5%;
+      }
+
     }
     .debito {
       font-family: $fontfamily-principal;
-      font-size: 180%;
+      font-size: 150%;
       color: $color_3;
       margin-top: 2%;
       margin-left: 2%;
+      @include mobile{
+        font-size: 120%;
+        margin-left: 5%;
+        margin-top: 5%;
+      }
     }
     .credito {
       font-family: $fontfamily-principal;
-      font-size: 180%;
+      font-size: 150%;
       color: $color_4;
       margin-top: 2%;
       margin-left: 2%;
+      @include mobile{
+        font-size: 120%;
+        margin-left: 5%;
+        margin-top: 5%;
+      }
     }
     .imgtarjetas {
       margin-left: 2%;
+      @include mobile{
+        width: 200px;
+      }
     }
 
     .subtitulomdp {
       margin-left: 2%;
       margin-top: 4%;
       font-size: 100%;
+      margin-bottom: 5%;
+      @include mobile{
+        margin-left: 5%;
+        font-size: 80%;
+        margin-bottom: 10%;
+      }
     }
     .pmdp {
       font-family: $fontfamily-principal;
       font-size: 100%;
       margin-top: 2%;
       margin-left: 2%;
+      @include mobile{
+        font-size: 80%;
+        margin-left: 3%;
+      }
     }
+
   }
 }
 /*envios*/

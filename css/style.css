@@ -279,38 +279,89 @@ body main .mediodepago {
   margin-top: 3%;
   color: black;
   font-size: 180%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .mediodepago {
+    font-size: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 3%;
+  }
 }
 body main .tarjetas {
   margin-top: 3%;
   background-color: rgb(220, 220, 226);
+  text-align: center;
+  font-size: 180%;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .tarjetas {
+    font-size: 135%;
+    margin-bottom: 5%;
+  }
 }
 body main .debito {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 180%;
+  font-size: 150%;
   color: rgb(16, 16, 17);
   margin-top: 2%;
   margin-left: 2%;
 }
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .debito {
+    font-size: 120%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
 body main .credito {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 180%;
+  font-size: 150%;
   color: rgb(18, 18, 55);
   margin-top: 2%;
   margin-left: 2%;
 }
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .credito {
+    font-size: 120%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
 body main .imgtarjetas {
   margin-left: 2%;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .imgtarjetas {
+    width: 200px;
+  }
 }
 body main .subtitulomdp {
   margin-left: 2%;
   margin-top: 4%;
   font-size: 100%;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .subtitulomdp {
+    margin-left: 5%;
+    font-size: 80%;
+    margin-bottom: 10%;
+  }
 }
 body main .pmdp {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   margin-top: 2%;
   margin-left: 2%;
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body main .pmdp {
+    font-size: 80%;
+    margin-left: 3%;
+  }
 }
 
 /*envios*/
