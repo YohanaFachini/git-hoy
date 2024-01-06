@@ -387,6 +387,7 @@ main .sobrenosotros img {
   main .sobrenosotros img {
     flex-direction: column;
     width: 80%;
+    margin-left: 10%;
   }
 }
 @media screen and (max-width: 501px) {
@@ -420,19 +421,31 @@ main .titulo2 {
   margin-top: 2%;
   margin-left: 5%;
 }
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .titulo2 {
+    font-size: 150%;
+    margin-left: 10%;
+  }
+}
 main .tiendas {
   margin-left: 5%;
 }
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .tiendas {
+    font-size: 100%;
+  }
+}
 main iframe {
-  margin-left: 5%;
+  margin-left: 28%;
   margin-bottom: 2%;
   display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 501px) and (max-width: 960px) {
   main iframe {
     width: 400px;
     height: 350px;
-    margin-left: 10%;
+    align-items: center;
     margin-top: 2%;
   }
 }
@@ -440,7 +453,15 @@ main iframe {
   main iframe {
     width: 300px;
     height: 300px;
-    margin: 0;
+    margin: 10%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main iframe {
+    margin-left: 10%;
+    display: flex;
+    width: 250px;
+    height: 250px;
   }
 }
 
