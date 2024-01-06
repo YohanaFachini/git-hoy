@@ -101,6 +101,7 @@ main {
     font-family: $fontfamily-principal;
     font-size: 95%;
     margin-bottom: 10%;
+    text-decoration: none;
     @include tablet {
       font-size: 50%;
     }
