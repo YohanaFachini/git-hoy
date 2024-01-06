@@ -59,8 +59,9 @@
 
 @mixin envios() {
   font-family: $fontfamily2;
-  font-size: 115%;
+  font-size: 150%;
   background: linear-gradient(to right, #9e0c9e, #7976fb);
+  padding: 5px;
   color: $color_7;
   margin-top: 2%;
   text-align: center;

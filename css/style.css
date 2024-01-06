@@ -27,6 +27,11 @@ header nav div ul li .link:hover {
 header nav div .imglogo {
   width: 40%;
   height: 20%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+header nav div .imglogo img:hover {
+  transform: scale(1.2);
 }
 
 main section div .conteiner {
@@ -121,8 +126,13 @@ main .texto {
 
 main .shop {
   text-align: center;
+  color: whitesmoke;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #9e0c9e, #7976fb);
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5px;
   margin-top: 3%;
   animation-name: miAnimacion;
   animation-duration: 5s;
@@ -136,28 +146,28 @@ main .shop {
 }
 @keyframes miAnimacion {
   0% {
-    color: #3e065f;
+    color: #1866e2;
   }
   25% {
-    color: #1e5128;
+    color: #46dfea;
   }
   35% {
-    color: #097188;
+    color: #0ce926;
   }
   50% {
-    color: #1a1a40;
+    color: #eb55b4;
   }
   60% {
-    color: #71115a;
+    color: #e8e357;
   }
   75% {
-    color: #59244b;
+    color: #14efe4;
   }
   80% {
-    color: #3c979e;
+    color: #e5244e;
   }
   100% {
-    color: black;
+    color: rgb(247, 17, 239);
   }
 }
 main .grid-conteiner {
@@ -296,22 +306,30 @@ body main .mediodepago {
 }
 body .tarjetas {
   margin-top: 3%;
-  background-color: rgb(220, 220, 226);
+  background: linear-gradient(to right, #9e0c9e, #7976fb);
+  color: whitesmoke;
   text-align: center;
   font-size: 180%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body .tarjetas .creditcardimg {
+  width: 5%;
+  height: 5%;
+  fill: whitesmoke !important;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
-  body .tarjetas {
+  body .tarjetas .creditcardimg {
     font-size: 135%;
     margin-bottom: 5%;
   }
 }
 body .debito {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 140%;
   color: rgb(16, 16, 17);
   margin-top: 2%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   body .debito {
@@ -321,11 +339,11 @@ body .debito {
   }
 }
 body .credito {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 150%;
-  color: rgb(18, 18, 55);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 140%;
+  color: rgb(16, 16, 17);
   margin-top: 2%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   body .credito {
@@ -335,7 +353,7 @@ body .credito {
   }
 }
 body .imgtarjetas {
-  margin-left: 2%;
+  margin-left: 5%;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   body .imgtarjetas {
@@ -343,7 +361,7 @@ body .imgtarjetas {
   }
 }
 body .subtitulomdp {
-  margin-left: 2%;
+  margin-left: 5%;
   margin-top: 4%;
   font-size: 100%;
   margin-bottom: 5%;
@@ -359,7 +377,7 @@ body .pmdp {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   margin-top: 2%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   body .pmdp {
@@ -371,7 +389,7 @@ body .pmdp {
 /*envios*/
 main .envios {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 130%;
+  font-size: 140%;
   margin-left: 2%;
   margin-top: 3%;
 }
@@ -391,8 +409,9 @@ main .envios .autobus {
 main .envios1,
 main .envios2 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 115%;
+  font-size: 150%;
   background: linear-gradient(to right, #9e0c9e, #7976fb);
+  padding: 5px;
   color: whitesmoke;
   margin-top: 2%;
   text-align: center;
@@ -469,7 +488,7 @@ main .sobrenosotros img {
 main .sobrenosotros p {
   text-align: justify;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 55px;
   margin-top: 30px;
   font-size: 100%;
   display: flex;
@@ -485,20 +504,27 @@ main .sobrenosotros p {
   }
 }
 main .titulo2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  background: linear-gradient(to right, #9e0c9e, #7976fb);
   font-size: 180%;
   text-align: left;
   margin-top: 2%;
   margin-left: 5%;
+  margin-right: 4%;
+  padding: 5px;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   main .titulo2 {
     font-size: 150%;
     margin-left: 10%;
+    margin-right: 10%;
   }
 }
 main .tiendas {
   margin-left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   main .tiendas {
