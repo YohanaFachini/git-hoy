@@ -3,11 +3,14 @@
   width: 80%;
   height: 80%;
   margin-left: 25%;
+  box-shadow:5px 5px 10px #7976fb;
+  
 }
 @mixin caja_personalizada2() {
   width: 80%;
   height: 80%;
   margin-left: 3%;
+  box-shadow: 5px 5px 10px #7976fb;
 }
 @mixin caja_productos() {
   display: grid;
@@ -19,6 +22,7 @@
 @mixin grid_item() {
   width: auto;
   height: 80%;
+  box-shadow: 5px 5px 10px #7976fb;
 }
 @mixin caja_descuentos() {
   display: grid;
@@ -32,6 +36,7 @@
   width: 90%;
   height: 75%;
   align-items: center;
+  box-shadow: 5px 5px 10px #7976fb;
 }
 
 @mixin parrafo() {
@@ -57,14 +62,16 @@
   font-size: 115%;
   background: linear-gradient(to right, #9e0c9e, #7976fb);
   color: $color_7;
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 @mixin enviosp() {
   font-family: $fontfamily2;
-  font-size: 100%;
+  font-size: 90%;
   text-align: center;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 2%;
 }
