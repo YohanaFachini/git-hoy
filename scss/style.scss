@@ -350,6 +350,9 @@ body {
       margin-top: 5%;
       margin-right: 10%;
     }
+    @include tablet{
+      margin-right: 5%;
+    }
   }
   p{font-family: $fontfamily-principal;
   text-align: center;
@@ -358,6 +361,10 @@ font-size: 100%;
   font-size: 60%;
   margin-left: 5%;
   margin-right: 5%;
+}
+@include tablet{
+  margin-left: 5%;
+  font-size: 60%;
 }}
 }
 

@@ -418,6 +418,11 @@ body .pmdp {
     margin-right: 10%;
   }
 }
+@media screen and (max-width: 501px) {
+  body .pmdp {
+    margin-right: 5%;
+  }
+}
 body p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -428,6 +433,12 @@ body p {
     font-size: 60%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+}
+@media screen and (max-width: 501px) {
+  body p {
+    margin-left: 5%;
+    font-size: 60%;
   }
 }
 
