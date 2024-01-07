@@ -122,6 +122,14 @@ main .texto {
 @media screen and (max-width: 501px) {
   main .texto {
     font-size: 50%;
+    margin-bottom: 25%;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  main .texto {
+    margin-bottom: 25%;
+    margin-top: 2%;
   }
 }
 
@@ -381,13 +389,18 @@ body .subtitulomdp {
   margin-left: 5%;
   margin-top: 4%;
   font-size: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 50%;
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   body .subtitulomdp {
     margin-left: 5%;
     font-size: 80%;
-    margin-bottom: 25%;
+    margin-bottom: 80%;
+  }
+}
+@media screen and (max-width: 501px) {
+  body .subtitulomdp {
+    margin-bottom: 50%;
   }
 }
 body .pmdp {
@@ -615,7 +628,7 @@ footer h5 {
 }
 @media screen and (min-width: 200px) and (max-width: 350px) {
   footer h5 {
-    margin-top: 25%;
+    margin-top: 50%;
   }
 }
 

@@ -104,7 +104,14 @@ main {
     text-decoration: none;
     @include tablet {
       font-size: 50%;
+      margin-bottom: 25%;
+      margin-top: 2%;
     }
+    @include mobile{
+      margin-bottom: 25%;
+      margin-top: 2%;
+    }
+
   }
 }
 
@@ -321,10 +328,13 @@ body {
     margin-left: 5%;
     margin-top: 4%;
     font-size: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 50%;
     @include mobile {
       margin-left: 5%;
       font-size: 80%;
+      margin-bottom: 80%;
+    }
+    @include tablet{
       margin-bottom: 50%;
     }
   }
