@@ -353,7 +353,12 @@ body {
   }
   p{font-family: $fontfamily-principal;
   text-align: center;
-font-size: 100%;}
+font-size: 100%;
+@include mobile{
+  font-size: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+}}
 }
 
 /*envios*/

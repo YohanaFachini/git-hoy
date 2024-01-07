@@ -423,6 +423,13 @@ body p {
   text-align: center;
   font-size: 100%;
 }
+@media screen and (min-width: 200px) and (max-width: 350px) {
+  body p {
+    font-size: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 
 /*envios*/
 main .envios {
