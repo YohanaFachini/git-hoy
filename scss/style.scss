@@ -100,7 +100,7 @@ main {
     text-align: justify;
     font-family: $fontfamily-principal;
     font-size: 95%;
-    margin-bottom: 10%;
+    margin-bottom: 25%;
     text-decoration: none;
     @include tablet {
       font-size: 50%;
@@ -202,7 +202,23 @@ main {
     height: 300px;
     margin-top: 10%;
   }
+  .nombreYprecio{
+    p{text-align: center;
+    font-family: $fontfamily2;
+  margin-top: 1%;
+  margin-right: 10%;
+  @include mobile{
+    font-size: 10px;
+  }
 }
+  }
+  .nombreYprecio{
+    strong{
+      text-align: center;
+    }
+  }
+}
+
 
 h2 {
   @include mobile {
@@ -232,7 +248,8 @@ h2 {
       text-align: center;
     }
   }
-}
+ 
+    }
 /*medios de pago*/
 body {
   main {
@@ -308,7 +325,7 @@ body {
     @include mobile {
       margin-left: 5%;
       font-size: 80%;
-      margin-bottom: 10%;
+      margin-bottom: 25%;
     }
   }
   .pmdp {
@@ -493,6 +510,9 @@ footer h5 {
   }
   @include tablet {
     font-size: 40%;
+  }
+  @include mobile{
+    margin-top: 25%;
   }
 }
 .footerImg {

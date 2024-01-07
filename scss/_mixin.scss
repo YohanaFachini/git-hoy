@@ -20,10 +20,14 @@
   margin-left: 5%;
 }
 @mixin grid_item() {
-  width: auto;
+  width: 70%;
   height: 80%;
   box-shadow: 5px 5px 10px #7976fb;
-}
+  align-items: center;
+  margin-left: 7%;
+ 
+  } 
+
 @mixin caja_descuentos() {
   display: grid;
   grid-template-rows: 1fr;
