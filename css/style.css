@@ -383,6 +383,7 @@ body .imgtarjetas {
 @media screen and (min-width: 200px) and (max-width: 350px) {
   body .imgtarjetas {
     width: 200px;
+    margin-top: 10%;
   }
 }
 body .subtitulomdp {
@@ -413,6 +414,7 @@ body .pmdp {
   body .pmdp {
     font-size: 80%;
     margin-left: 3%;
+    margin-top: 5%;
   }
 }
 

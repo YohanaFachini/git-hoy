@@ -321,6 +321,7 @@ body {
     margin-left: 5%;
     @include mobile {
       width: 200px;
+      margin-top: 10%;
     }
   }
 
@@ -346,6 +347,7 @@ body {
     @include mobile {
       font-size: 80%;
       margin-left: 3%;
+      margin-top: 5%;
     }
   }
 }
