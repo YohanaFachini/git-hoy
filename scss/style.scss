@@ -329,14 +329,14 @@ body {
     margin-left: 5%;
     margin-top: 4%;
     font-size: 100%;
-    margin-bottom: 50%;
+    margin-bottom: 25%;
     @include mobile {
       margin-left: 5%;
       font-size: 80%;
-      margin-bottom: 80%;
+      margin-bottom: 25%;
     }
     @include tablet{
-      margin-bottom: 50%;
+      margin-bottom: 25%;
     }
   }
   .pmdp {
@@ -350,6 +350,9 @@ body {
       margin-top: 5%;
     }
   }
+  p{font-family: $fontfamily-principal;
+  text-align: center;
+font-size: 100%;}
 }
 
 /*envios*/
